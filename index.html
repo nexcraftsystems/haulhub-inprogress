@@ -8,17 +8,17 @@
     * { margin:0; padding:0; box-sizing:border-box; }
     body {
       height: 100vh;
-      background: #ffffff;               /* pure white */
+      background: #ffffff;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      gap: 20px;                    /* perfect space between logo and text */
       font-family: 'Segoe UI', Arial, sans-serif;
     }
     img {
-      width: 480px;                       /* huge logo */
+      width: 480px;
       max-width: 92vw;
-      margin-bottom: -10px;               /* pulls logo super close to text */
     }
     h1 {
       font-size: 4.8rem;
@@ -26,10 +26,12 @@
       color: #1a2e5a;
       letter-spacing: -3px;
       margin: 0;
+      text-align: center;          /* forces perfect centering */
     }
     @media (max-width: 640px) {
       img { width: 340px; }
       h1 { font-size: 3.2rem; letter-spacing: -1.5px; }
+      gap: 15px;
     }
   </style>
 </head>
