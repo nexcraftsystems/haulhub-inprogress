@@ -4,109 +4,61 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HaulHub.my – Under Construction</title>
-  <meta name="description" content="HaulHub.my is coming soon. Stay tuned!">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      height: 100%;
+      background: #ffffff;
     }
 
     body {
-      min-height: 100vh;
-      background: #ffffff;
       display: grid;
-      place-items: center; /* Perfect centering on all devices */
-      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
-      overflow: hidden;
-      padding: 20px;
+      place-items: center;           /* Perfect center on ANY device */
+      font-family: 'Segoe UI', Arial, sans-serif;
+      padding: 20px;                 /* Safety padding on very small screens */
     }
 
-    .container {
+    .wrapper {
       text-align: center;
-      animation: fadeInUp 1.2s ease-out forwards;
-      opacity: 0;
-      transform: translateY(30px);
     }
 
     img {
-      width: 520px;
+      width: 480px;
       max-width: 92vw;
       height: auto;
-      filter: drop-shadow(0 10px 30px rgba(26, 46, 90, 0.15));
-      margin-bottom: -20px;
-      animation: float 6s ease-in-out infinite;
+      margin-bottom: -10px;          /* Keeps logo super close to text */
+      filter: drop-shadow(0 15px 35px rgba(26, 46, 90, 0.12));
     }
 
     h1 {
-      font-size: 5.8rem;
-      font-weight: 950;
-      background: linear-gradient(135deg, #1a2e5a 0%, #2c5282 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      letter-spacing: -4px;
-      line-height: 1;
+      font-size: 4.8rem;
+      font-weight: 900;
+      color: #1a2e5a;
+      letter-spacing: -3px;
       margin: 0;
+      line-height: 1;
     }
 
-    p {
-      font-size: 1.4rem;
-      color: #4a5568;
-      margin-top: 1.5rem;
-      font-weight: 500;
-      letter-spacing: -0.5px;
-    }
-
-    /* Floating animation for logo */
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-15px); }
-    }
-
-    /* Fade in animation */
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* Responsive adjustments */
+    /* Tablet & smaller */
     @media (max-width: 768px) {
-      img {
-        width: 380px;
-        margin-bottom: -10px;
-      }
-      h1 {
-        font-size: 4rem;
-        letter-spacing: -2.5px;
-      }
-      p {
-        font-size: 1.2rem;
-      }
+      img { width: 380px; }
+      h1 { font-size: 4rem; letter-spacing: -2px; }
     }
 
+    /* Mobile */
     @media (max-width: 480px) {
-      img {
-        width: 300px;
-      }
-      h1 {
-        font-size: 3.4rem;
-        letter-spacing: -2px;
-      }
-      p {
-        font-size: 1.1rem;
-        padding: 0 10px;
-      }
+      img { width: 320px; }
+      h1 { font-size: 3.4rem; letter-spacing: -1.8px; }
     }
   </style>
 </head>
 <body>
-  <div class="container">
+
+  <div class="wrapper">
     <img src="assets/img/haulhub-logo2.png" alt="HaulHub Logo">
     <h1>Under Construction</h1>
-    <p>We're working hard to launch something awesome.<br>Coming soon!</p>
   </div>
+
 </body>
 </html>
